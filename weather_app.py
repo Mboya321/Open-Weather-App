@@ -6,6 +6,9 @@ root = tk.Tk()
 canvas = tk.Canvas(root, height= 500, width=600)
 canvas.pack()
 
+#the keys below was based on my acc
+#go visit openweathermap.org to get ur own key
+
 #key=a3c049293a6abc2955af2f513cb32cca
 #api.openweathermap.org/data/2.5/forecast?q={city name}&appid={API key}
 
@@ -30,7 +33,7 @@ def get_weather(city):
     label['text'] = format_response(weather)
 
 
-
+#setting the background image
 background_image = tk.PhotoImage(file='weather_image.png')
 background_label = tk.Label(root, image=background_image)
 background_label.place(relwidth=1, relheight=1)
